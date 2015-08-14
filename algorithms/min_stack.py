@@ -42,7 +42,6 @@ class MinStack:
         self.stack.pop()
         return self.items.pop()
 
-        
     # @return an integer
     def top(self):
         return self.stack.top()
