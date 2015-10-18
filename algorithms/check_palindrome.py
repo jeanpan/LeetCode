@@ -13,10 +13,10 @@ class Solution:
             return False
 
     def reverseStr(self, str):
-        if len(str) == 1:
+        if str == "":
           return str
         else:
-            return str[-1:] + self.reverseStr(str[:-1])
+            return str[-1] + self.reverseStr(str[:-1])
 
 s = Solution()
 print(s.checkPalindrome("kayak"))
